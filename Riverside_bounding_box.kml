@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- In order to view this in Google Maps, upload to web
+      and then use this http://maps.google.com/maps?q=http://www.YOURKML.kml
+ -->
 <kml xmlns="http://www.opengis.net/kml/2.2">
   <Document>
     <Style id="transBluePoly">
