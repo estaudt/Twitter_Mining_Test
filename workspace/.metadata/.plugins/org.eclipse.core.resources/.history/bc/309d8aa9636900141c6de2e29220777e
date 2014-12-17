@@ -1,0 +1,53 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Tue Nov  4
+
+@author: elliotstaudt
+"""
+
+from nltk.corpus import wordnet as wn
+
+tag_dict = {}
+skipped = 0
+total = 0
+
+tagsDir = '/Users/elliotstaudt/Documents/MIRFLICKR-25000/tags/'
+# Get the names of each of the tag files in the tag directory.
+# Read the tags and find the synonym for each one, if one exists.
+for num in range(25000):
+  fname = tagsDir + str(num) + '.txt'
+  with open(fname) as f:
+    content = [x.strip('\n') for x in f.readlines()]
+    content = [x.strip('\r') for x in content]
+  for word in content:
+    total+=1
+    try:
+      word = word.decode('ascii')
+    except UnicodeDecodeError:
+      skipped+=1
+      #print word, "is not an ascii-encoded unicode string"
+      #print
+      continue
+    #print word
+    #print wn.morphy(word)
+    #print wn.synsets(word)
+    #print
+    syn = wn.morphy(word)
+    if syn != 'None':
+      if syn in tag_dict:
+        tag_dict[syn].append(num)
+      else:
+        tag_dict[syn]=[num]
+    
+#print tag_dict
+print len(tag_dict.keys())
+
+max_tags = 0
+for key in tag_dict:
+  tag_len = len(tag_dict[key])
+  if tag_len > max_tags:
+    max_tags = tag_len
+
+print "most used word:", max_tags
+print "total:", total
+print "skipped:", skipped

@@ -1,0 +1,16 @@
+import numpy as np
+import scipy.io as sio
+import os
+import glob
+import scipy.linalg as linalg
+
+# params
+objectsDir = '/Users/elliotstaudt/Documents/MIRFLICKR-25000/objects/'
+
+list_of_BOW = []
+# creat an array that will hold all the numbers
+for num in range(10000):
+  local_BOW_files = glob.glob(objectsDir+str(num).zfill(5)+'/object_*.jpg')
+    if len(local_BOW_files) > 0:
+      for count in range(len(local_object_files)):
+        list_of_BOW.append(sio.loadmat())

@@ -1,0 +1,22 @@
+import numpy as np
+
+
+def sparsify(a, lambda_):
+  cols = []
+  vals = np.array(a)
+  cover = np.zeros([1,len(a)])
+  sort_index = np.argsort(vals)
+  min_dist = np.linalg.norm(vals)
+  min_ind = len(a)
+  for count in range(len(a)):
+    cover[0][sort_index[-1-count]]=vals[sort_index[-1-count]]
+    vals[sort_index[-1-count]] = 0
+    temp_dist = lambda_*np.linalg.norm(cover) + np.linalg.norm(vals,1)
+    if temp_dist < min_dist:
+      min_ind = -1-count
+      continue
+  
+  for count in range(-min_ind - 1):
+    cols.append(sort_index[-1-count])
+
+  return np.array(cols)

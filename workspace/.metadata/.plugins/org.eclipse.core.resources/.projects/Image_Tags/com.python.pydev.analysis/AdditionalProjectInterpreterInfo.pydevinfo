@@ -1,0 +1,54 @@
+-- VERSION_4
+-- START DISKCACHE
+/Users/elliotstaudt/Documents/workspace/.metadata/.plugins/org.eclipse.core.resources/.projects/Image_Tags/com.python.pydev.analysis/v2_indexcache
+word_association|1418183314000|/Users/elliotstaudt/Documents/workspace/Image_Tags/word_association.py
+match_object_words|1417754084000|/Users/elliotstaudt/Documents/workspace/Image_Tags/match_object_words.py
+tag_synonyms|1418353190000|/Users/elliotstaudt/Documents/workspace/Image_Tags/tag_synonyms.py
+sparsipy|1418707932000|/Users/elliotstaudt/Documents/workspace/Image_Tags/sparsipy.py
+svd_on_data|1416490450000|/Users/elliotstaudt/Documents/workspace/Image_Tags/svd_on_data.py
+-- END DISKCACHE
+-- START DICTIONARY
+5
+1=word_association
+2=match_object_words
+4=tag_synonyms
+5=sparsipy
+3=svd_on_data
+-- END DICTIONARY
+-- START TREE 1
+31
+a|2|a!11@a!19@
+arr|1|array_of_BOW!27@
+ass|1|assignments!11@
+bow|1|bow!27@
+cen|1|centers!11@
+clu|2|cluster_filename!11@cluster_dicts!11@
+con|3|content!35@convertToSynonyms!42@content!11@
+cou|1|count!27@
+f|1|f!11@
+fna|2|fname!35@fname!11@
+fsa|2|fsavename!11@fsavename!35@
+ind|2|inds!11@index_file!11@
+key|2|key_count!11@keys!11@
+lam|2|lambda_!11@lambda_!19@
+lis|1|list_of_BOW!27@
+loc|4|local_count!11@local_object_files!11@local_BOW_files!27@local_count!35@
+mas|2|master_dict_ordered!11@master_dict!11@
+mat|1|matched_word!11@
+max|3|max_tags!35@max_key_word!35@max_image_tags!35@
+num|2|num_objects!27@num_words!11@
+obj|5|object_index!11@objects_Dir!11@objectsDir!27@objectsDir!11@object_words!11@
+res|1|results!19@
+sf|2|sf!11@sf!35@
+spa|1|sparsify!42@
+svd|1|SVD_a!27@
+syn|1|syn!35@
+tag|5|tagsDir!35@tag_file_names!35@tag_dict!35@tag_len!35@tagsDir!11@
+tex|1|text!35@
+tok|1|token!35@
+tot|0|
+wor|2|word!35@word_matches!11@
+-- END TREE
+-- START TREE 2
+0
+-- END TREE

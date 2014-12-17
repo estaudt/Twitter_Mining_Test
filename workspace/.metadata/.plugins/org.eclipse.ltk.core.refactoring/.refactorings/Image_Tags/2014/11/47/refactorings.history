@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Image_Tags/word_association&apos; to &apos;word_association.py&apos;" description="Rename resource &apos;word_association&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="word_association" name="word_association.py" stamp="1416247737011" updateReferences="true"/>
+</session>
